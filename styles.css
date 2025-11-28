@@ -1,0 +1,11 @@
+*{
+    border:1px solid red;
+}
+.Logo img{
+display: block;
+width: 175px;
+height: 100px;
+margin-left:auto ;
+margin-right:auto ;
+border-radius: 100%;
+}
