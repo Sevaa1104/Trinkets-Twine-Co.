@@ -4,14 +4,31 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" href="styles.css">
+	<style>
+        *{
+        border: 1px solid red;    
+        }
+        .flexContainer{
+            display: flex;
+            flex-direction: row;
+        }
+       .flexContainer .flexHeader {
+            width: 40%;
+        }
+       .flexContainer .flexNav{
+            width: 60%;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="Logo">
-            <img src="Assets/Updated Side 1.png">   
-        </div>
-    </header>
+    <div class="flexContainer">
+        <header class="flexHeader">
+            a
+        </header>
+        <nav class="flexNav">
+            a
+        </nav>
+    </div>
 </body>
 </html>
