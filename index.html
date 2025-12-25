@@ -8,12 +8,26 @@
         *{
         border: 1px solid red;    
         }
-        .flexContainer{
+        .flexContainer,
+        .flexHeader,
+        .flexNav,
+        img{
             display: flex;
+        }
+
+        .flexContainer{
             flex-direction: row;
         }
        .flexContainer .flexHeader {
+            flex-direction: column;
             width: 40%;
+        }
+        .flexContainer .flexHeader img{
+           width:50%;
+           border-radius: 80%;
+           margin:10px;
+           align-self: center;
+           
         }
        .flexContainer .flexNav{
             width: 60%;
@@ -24,7 +38,10 @@
 <body>
     <div class="flexContainer">
         <header class="flexHeader">
-            a
+            <img src="Assets/Trinkets and Twine Company Website Logo option 2.png">
+            <div id="title">
+                Trinkets & Twine Company
+            </div>
         </header>
         <nav class="flexNav">
             a
