@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Trinkets & Twine Company</title>
 	<style>
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
         *{
         border: 1px solid red;    
         }
@@ -17,10 +18,14 @@
 
         .flexContainer{
             flex-direction: row;
+            height:100vh;
+            max-height: 1080px;
         }
        .flexContainer .flexHeader {
             flex-direction: column;
             width: 40%;
+            background-color:#f0a5d2;
+            justify-content: center;
         }
         .flexContainer .flexHeader img{
            width:50%;
@@ -31,6 +36,31 @@
         }
        .flexContainer .flexNav{
             width: 60%;
+            flex-direction: column;
+            align-self: center;
+        }
+        #title{
+            align-self: center;
+            font-family: "Emilys Candy";
+            font-size: xx-large;
+            color: #fff;;
+            text-align: center;
+        }
+        #About,
+        #Shop,
+        #Socials{
+            margin: 5px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        #About{
+            background-color:#F9D72D;
+        }
+        #Shop{
+            background-color:#f0a5d2;
+        }
+        #Socials{
+            background-color:#53DBD1;
         }
     </style>
 </head>
@@ -44,7 +74,10 @@
             </div>
         </header>
         <nav class="flexNav">
-            a
+            <div id="About">About me</div>
+            <div id="Shop">Shop</div>
+            <div id="Socials">My socials</div>
+            
         </nav>
     </div>
 </body>
