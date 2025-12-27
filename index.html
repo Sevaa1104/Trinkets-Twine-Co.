@@ -17,27 +17,30 @@
         }
 
         .flexContainer{
-            flex-direction: row;
+            flex-direction:column;
             height:100vh;
             max-height: 1080px;
+            background:radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 42%, rgba(255, 255, 255, 0) 88%), url(Assets/Background.png);
+            background-position: center;
         }
        .flexContainer .flexHeader {
             flex-direction: column;
-            width: 40%;
+            width: 50%;
+            height:100vh;
+            max-height:1080px;
             background-color:#f0a5d2;
             justify-content: center;
+            align-self: center;
+            border-radius: 20px;
+            
         }
         .flexContainer .flexHeader img{
-           width:50%;
+           width:30%;
            border-radius: 80%;
            margin:10px;
            align-self: center;
+           margin-top:-15vh;
            
-        }
-       .flexContainer .flexNav{
-            width: 60%;
-            flex-direction: column;
-            align-self: center;
         }
         #title{
             align-self: center;
@@ -45,23 +48,10 @@
             font-size: xx-large;
             color: #fff;;
             text-align: center;
+            padding:5px;
+            margin-top: 5vh;
         }
-        #About,
-        #Shop,
-        #Socials{
-            margin: 5px;
-            padding: 10px;
-            border-radius: 20px;
-        }
-        #About{
-            background-color:#F9D72D;
-        }
-        #Shop{
-            background-color:#f0a5d2;
-        }
-        #Socials{
-            background-color:#53DBD1;
-        }
+
     </style>
 </head>
 
@@ -73,12 +63,7 @@
                 Trinkets & Twine Company
             </div>
         </header>
-        <nav class="flexNav">
-            <div id="About">About me</div>
-            <div id="Shop">Shop</div>
-            <div id="Socials">My socials</div>
-            
-        </nav>
+        
     </div>
 </body>
 </html>
