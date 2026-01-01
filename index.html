@@ -9,32 +9,33 @@
         *{
         border: 1px solid red;    
         }
-        .flexContainer,
-        .flexHeader,
-        .flexNav,
+    
+        .flexbody,
         img{
             display: flex;
         }
 
-        .flexContainer{
-            flex-direction:column;
-            height:100vh;
-            max-height: 1080px;
-            background:radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 42%, rgba(255, 255, 255, 0) 88%), url(Assets/Background.png);
+        body{
+            display: flex ;
+            flex-direction: row;
+            justify-content: left;
+            background:radial-gradient(circle,rgba(255, 255, 255, 1) 0%, 
+                rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0) 68%),
+                 url(Assets/Background.png);
             background-position: center;
         }
-       .flexContainer .flexHeader {
+    .Title {
+            display: flex;
             flex-direction: column;
             width: 50%;
             height:100vh;
             max-height:1080px;
             background-color:#f0a5d2;
             justify-content: center;
-            align-self: center;
             border-radius: 20px;
             
         }
-        .flexContainer .flexHeader img{
+         .Title img{
            width:30%;
            border-radius: 80%;
            margin:10px;
@@ -51,18 +52,40 @@
             padding:5px;
             margin-top: 5vh;
         }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+        }
+        #Socials{
+            display: flex;
+            flex-direction: row;
+        }
 
     </style>
 </head>
 
 <body>
-    <div class="flexContainer">
-        <header class="flexHeader">
+        <div class="Title">
             <img src="Assets/Trinkets and Twine Company Website Logo option 2.png">
             <div id="title">
                 Trinkets & Twine Company
             </div>
-        </header>
+        </div>
+        <nav>
+            <nav id="Shop">
+                Placeholder
+            </nav>
+            <nav id="Socials">
+                <nav id="Insta">
+                    Placeholder
+                </nav>
+                <nav id="TikTok">
+                    Placeholder
+                </nav>
+            </nav>
+        </nav>
         
     </div>
 </body>
