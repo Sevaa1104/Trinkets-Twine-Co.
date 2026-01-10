@@ -27,7 +27,7 @@
     .Title {
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 40%;
             height:100vh;
             max-height:1080px;
             background-color:#f0a5d2;
@@ -57,11 +57,50 @@
             flex-direction: column;
             gap: 15px;
             justify-content: center;
+            align-items: center;
+            width: 60%;
+        }
+        #ShopLink{
+            width: fit-content;
         }
         #Socials{
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            
+
         }
+        #TikTok,
+        #Insta,
+        #Amazon{
+            border-radius: 25px;
+            height:40vh;
+        }
+        #Insta{
+           background-color: #e1306c; 
+        }
+        #Amazon{
+            background-color:  	#ff9900;
+        }
+        #TikTok{
+            background-color: #2af0ea;
+        }   
+        
+        button a{
+            text-decoration:none;
+            
+
+
+        }
+        #Shop{
+            border-radius: 18px;
+            padding:10px;
+            width: 20vw;
+            height:10vh;
+        }
+
 
     </style>
 </head>
@@ -74,14 +113,22 @@
             </div>
         </div>
         <nav>
-            <nav id="Shop">
-                Placeholder
+            <nav id="ShopLink">
+                <button id="Shop">
+                    <a
+                     href="https://www.etsy.com/shop/trinketsandtwineco/?etsrc=sdt&dd_referrer="
+                      rel="noopener noreferrer">Shop
+                    </a>
+                </button>
             </nav>
             <nav id="Socials">
                 <nav id="Insta">
                     Placeholder
                 </nav>
                 <nav id="TikTok">
+                    Placeholder
+                </nav>
+                <nav id="Amazon">
                     Placeholder
                 </nav>
             </nav>
