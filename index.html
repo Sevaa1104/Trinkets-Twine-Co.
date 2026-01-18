@@ -76,17 +76,86 @@
         #Insta,
         #Amazon{
             border-radius: 25px;
-            height:40vh;
+            height:6em;
+            width: 6em;
         }
         #Insta{
-           background-color: #e1306c; 
+            position: relative;
+           background:linear-gradient(to right, #3F5EFB, #FC466B);
+           z-index: 1;
+
+        }
+        #Insta #IGlogo{
+            height: 50%;
+        }
+        #TikTok #TTlogo{
+            height:50%;
+        }
+        #Amazon  #AMZNlogo{
+            height:50%;
+        }
+        #Insta::before{
+            position:absolute;
+            background: linear-gradient(to right, #d53369, #daae51);
+            border-radius: 25px;
+            content: "";
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transition: opacity 0.5s;
+            opacity: 0;
+
+        }
+        #Insta:hover::before{
+            opacity: 1;
         }
         #Amazon{
-            background-color:  	#ff9900;
+            position: relative;
+            background:linear-gradient(to right, #ff9900, #146eb4);
+            z-index: 1;
+        }
+        #Amazon::before{
+            position:absolute;
+            background: linear-gradient(to right, #146eb4, #232f3e);
+            border-radius: 25px;
+            content: "";
+            top: 0;
+            right:0;
+            bottom:0;
+            left:0;
+            z-index: -1;
+            transition:opacity 0.5s;
+            opacity:0;
+            
+        }
+        #Amazon:hover::before{
+            opacity:1;
         }
         #TikTok{
-            background-color: #2af0ea;
+            position: relative;
+            background:linear-gradient(to right, #fe2858, #de8c9d);
+            z-index: 1;
+            
         }   
+        #TikTok::before{
+            position:absolute;
+            background: linear-gradient(to right, #de8c9d, #2af0ea);
+            border-radius: 25px;
+            content:"";
+            top: 0;
+            right:0;
+            bottom:0;
+            left:0;
+            z-index: -1;
+            transition:opacity 0.5s;
+            opacity:0;
+
+        }
+        #TikTok:hover::before{
+            opacity:1;
+        }
         
         button a{
             text-decoration:none;
@@ -95,11 +164,19 @@
 
         }
         #Shop{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 18px;
             padding:10px;
             width: 20vw;
-            height:10vh;
+            height:15vh;
+            background-color: #F56400;
         }
+        #Shop #Etsylogo{
+            height:50%;
+        }
+        
 
 
     </style>
@@ -114,23 +191,28 @@
         </div>
         <nav>
             <nav id="ShopLink">
-                <button id="Shop">
-                    <a
-                     href="https://www.etsy.com/shop/trinketsandtwineco/?etsrc=sdt&dd_referrer="
-                      rel="noopener noreferrer">Shop
-                    </a>
+                <a href="https://www.etsy.com/shop/trinketsandtwineco/?etsrc=sdt" target="_blank" rel="noopener noreferrer">
+                    <button id="Shop">
+                    <img id="Etsylogo" src="Assets/Etsy_Logo_1.png" alt="Etsy Shop Logo">
                 </button>
+            </a>
             </nav>
             <nav id="Socials">
+            <a href="https://www.instagram.com/trinketsandtwinecompany" target="_blank" rel="noopener noreferrer">
                 <nav id="Insta">
-                    Placeholder
+                    <img id="IGlogo" src="Assets/Instagram_Glyph_White.png" alt="Instagram Logo">
                 </nav>
+            </a>
+            <a href="https://www.tiktok.com/@trinketsandtwinecompany" target="_blank" rel="noopener noreferrer">
                 <nav id="TikTok">
-                    Placeholder
+                    <img id="TTlogo" src="Assets/TIKTOK_SOCIAL_ICON_SOLO_WHITE.png" alt="Tiktok Logo">
                 </nav>
-                <nav id="Amazon">
-                    Placeholder
-                </nav>
+            </a>
+                <a href="https://www.amazon.com/shop/trinketsandtwinecompany?ccs_id=613f1a51-7b87-4154-a5bb-5d93f3accf41" target="_blank" rel="noopener noreferrer">
+                    <nav id="Amazon">
+                        <img id="AMZNlogo" src="Assets/amazon-256.png" alt="Amazon Logo">
+                    </nav>
+                </a>
             </nav>
         </nav>
         
