@@ -20,7 +20,7 @@
             flex-direction: row;
             justify-content: left;
             background:radial-gradient(circle,rgba(255, 255, 255, 1) 0%, 
-                rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0) 68%),
+                rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0) 48%),
                  url(Assets/Background.png);
             background-position: center;
         }
@@ -30,7 +30,7 @@
             width: 40%;
             height:100vh;
             max-height:1080px;
-            background-color:#f0a5d2;
+            background:#f0a5d2;
             justify-content: center;
             border-radius: 20px;
             
@@ -74,7 +74,8 @@
         }
         #TikTok,
         #Insta,
-        #Amazon{
+        #Amazon,
+        #ShopLink{
             border-radius: 25px;
             height:6em;
             width: 6em;
@@ -157,25 +158,15 @@
             opacity:1;
         }
         
-        button a{
-            text-decoration:none;
-            
-
-
-        }
-        #Shop{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 18px;
-            padding:10px;
-            width: 20vw;
-            height:15vh;
-            background-color: #F56400;
-        }
-        #Shop #Etsylogo{
-            height:50%;
-        }
+        #ShopLink{
+         position: relative;
+            background:#ff7b00;
+            z-index: 1;
+            font-family: "Emilys Candy";
+            font-size: x-large;
+            color: #fff;;
+            text-align: center;}
+        
         
 
 
@@ -189,14 +180,15 @@
                 Trinkets & Twine Company
             </div>
         </div>
-        <nav>
-            <nav id="ShopLink">
-                <a href="https://www.etsy.com/shop/trinketsandtwineco/?etsrc=sdt" target="_blank" rel="noopener noreferrer">
-                    <button id="Shop">
-                    <img id="Etsylogo" src="Assets/Etsy_Logo_1.png" alt="Etsy Shop Logo">
-                </button>
-            </a>
+        <a href="https://www.etsy.com/shop/trinketsandtwineco/?etsrc=sdt" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            
+            <nav>
+               <nav id="ShopLink">
+                Shop Now
+                
             </nav>
+
+        </a>
             <nav id="Socials">
             <a href="https://www.instagram.com/trinketsandtwinecompany" target="_blank" rel="noopener noreferrer">
                 <nav id="Insta">
