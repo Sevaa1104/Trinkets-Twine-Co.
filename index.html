@@ -6,9 +6,7 @@
 	<title>Trinkets & Twine Company</title>
 	<style>
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
-        *{
-        border: 1px solid red;    
-        }
+       
     
         .flexbody,
         img{
@@ -23,7 +21,9 @@
                 rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0) 48%),
                  url(Assets/Background.png);
             background-position: center;
-        }
+        
+            }
+        
     .Title {
             display: flex;
             flex-direction: column;
@@ -33,7 +33,7 @@
             background:#f0a5d2;
             justify-content: center;
             border-radius: 20px;
-            
+           
         }
          .Title img{
            width:30%;
@@ -166,7 +166,28 @@
             font-size: x-large;
             color: #fff;;
             text-align: center;}
-        
+            
+            @media (max-width: 767px) 
+            {
+                .Title{
+                    width: 100vw;
+                    height: 40vh;
+                    margin-bottom: 30px;
+
+                }
+                .Title img{
+                    position: absolute;
+                    margin-bottom: 30px;
+                }
+                body {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                nav{
+                    align-self: center;
+                
+                }
+            }
         
 
 
